@@ -1,0 +1,89 @@
+.app-container {
+  min-height: 100vh;
+  padding: 64px calc(50% - 416px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .search-bar {
+    width: 100%;
+    padding: 48px 24px;
+  }
+
+  .book-list {
+    width: 100%;
+    .highlight {
+      width: 160px;
+      height: 200px;
+      padding: 8px;
+      overflow-wrap: break-word;
+      em {
+        background-color: yellow;
+      }
+    }
+    .ant-upload-list-picture-card-container,
+    .ant-upload.ant-upload-select.ant-upload-select-picture-card {
+      width: calc(25% - 48px);
+      min-height: 266px;
+      margin: 0 24px 24px;
+
+      .uploading {
+        width: 100%;
+        height: 100%;
+        background-color: #fafafa;
+        border: 1px dashed #d9d9d9;
+        padding: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .file-name {
+          margin-top: 24px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+      }
+    }
+
+    .ant-card-body {
+      padding: 8px;
+      .ant-card-meta-description {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.sider {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .menu-bar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .content {
+    height: 857px;
+    display: flex;
+    justify-content: center;
+  }
+  .ant-pagination-simple-pager {
+    color: #fff;
+    input {
+      color: #000;
+    }
+  }
+  .ant-pagination-prev.ant-pagination-disabled .ant-pagination-item-link,
+  .ant-pagination-next.ant-pagination-disabled .ant-pagination-item-link {
+    color: rgba(255, 255, 255, 0.25);
+  }
+  .ant-pagination-prev .ant-pagination-item-link,
+  .ant-pagination-next .ant-pagination-item-link {
+    color: #fff;
+  }
+}
