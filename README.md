@@ -3,5 +3,3 @@
 ## ✨ Features
 - 📘 Upload books to backend server
 - 🔍 Full text search on all books
-
-## 📦 Install
